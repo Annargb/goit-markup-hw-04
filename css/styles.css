@@ -150,7 +150,17 @@ img {
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/hero.jpg');
   background-color: var(--headings-text-color);
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   max-width: 496px;
@@ -230,6 +240,34 @@ img {
 
 .advatages-list .item {
   flex-basis: calc((100% - 72px) / 4);
+}
+
+.advatages-list > .item::before {
+  display: block;
+  margin-bottom: 8px;
+  height: 112px;
+  width: 264x;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  background-position: center;
+  background-color: var(--light-text-color);
+}
+
+.advatages-list > .item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.advatages-list > .item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.advatages-list > .item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.advatages-list > .item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .item-title {
@@ -356,6 +394,11 @@ img {
   width: calc((100% - 48px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
+}
+
+.card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .wrapper-cards {
