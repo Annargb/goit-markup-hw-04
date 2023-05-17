@@ -401,20 +401,17 @@ img {
   color: var(--stroke-logo-color);
 }
 
-/* .customers-link:hover,
-.customers-link:focus {
-  border: 1px solid var(--hover-color);
-} */
-
-.customers-link:hover .customer-logo,
-.customers-link:focus .customer-logo,
 .customers-link:hover,
 .customers-link:focus {
-  fill: var(--hover-color);
+  color: var(--hover-color);
+}
+
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--hover-color);
 }
 
-/* .customers-link:hover .customer-logo,
+/* /* .customers-link:hover .customer-logo,
 .customers-link:focus .customer-logo {
   fill: var(--hover-color);
 } */
