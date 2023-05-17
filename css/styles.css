@@ -297,7 +297,7 @@ img {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -341,7 +341,7 @@ img {
 }
 
 .wrapper {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .card-description {
@@ -380,7 +380,8 @@ img {
   padding-bottom: 120px;
 }
 .customers-item {
-  flex-basis: calc((100%-120px) / 6);
+  flex-basis: calc((100% - 120px) / 6);
+  height: 88px;
 }
 
 .customers-list {
@@ -389,8 +390,10 @@ img {
 }
 
 .customers-link {
-  display: block;
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
   border: 1px solid var(--stroke-logo-color);
   border-radius: 4px;
   color: var(--stroke-logo-color);
@@ -407,8 +410,6 @@ img {
 }
 
 .customer-logo {
-  width: 104px;
-  height: 56px;
   fill: currentColor;
 }
 
@@ -492,7 +493,12 @@ img {
   margin-bottom: 48px;
 }
 
-.card:hover {
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
