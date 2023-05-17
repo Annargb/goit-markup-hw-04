@@ -411,11 +411,6 @@ img {
   border: 1px solid var(--hover-color);
 }
 
-/* /* .customers-link:hover .customer-logo,
-.customers-link:focus .customer-logo {
-  fill: var(--hover-color);
-} */
-
 .customer-logo {
   fill: currentColor;
 }
